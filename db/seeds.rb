@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Post.delete_all
+Post.new(title: 'second post', body: 'This is a body for the second post', 
+    user_id: 'test_user', version: '20130708').save!

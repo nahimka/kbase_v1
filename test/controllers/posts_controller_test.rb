@@ -3,6 +3,12 @@ require 'test_helper'
 class PostsControllerTest < ActionController::TestCase
   setup do
     @post = posts(:one)
+    @update = {
+      title: 'first post'
+      body: 'this is my first post'
+      user_id: 'test_user'
+      #version: '20130707'
+    }
   end
 
   test "should get index" do
@@ -35,7 +41,7 @@ class PostsControllerTest < ActionController::TestCase
   end
 
   test "should update post" do
-    patch :update, id: @post, post: { body: @post.body, title: @post.title, user_id: @post.user_id, version: @post.version }
+    patch :update, id: @post, post: @update
     assert_redirected_to post_path(assigns(:post))
   end
 
