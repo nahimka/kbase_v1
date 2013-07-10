@@ -1,4 +1,5 @@
 Kbase::Application.routes.draw do
+  get "library/index"
   resources :tags
 
   resources :users
@@ -10,6 +11,7 @@ Kbase::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  root 'library#index', as: 'library'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
