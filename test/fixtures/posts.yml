@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  title: MyString
-  body: MyString
-  user_id: MyString
-  version: MyString
+dss_hive:
+  title: DSS Hive overview
+  body: DSS Hive is new version of the DSSv1
+  user_id: Max
+  version: 20130706
 
-two:
-  title: MyString
-  body: MyString
-  user_id: MyString
-  version: MyString
+dssv1:
+  title: DSSv1 overview
+  body: DSSv1 is the first DSS system
+  user_id: Demina
+  version: 20130701
