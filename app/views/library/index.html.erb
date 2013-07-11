@@ -1,7 +1,8 @@
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-<h1>DSS Database</h1>
+
+<h1>Your Pragmatic Catalog</h1>
 
 <% @posts.each do |post| %>
   <div class="entry">
@@ -11,8 +12,7 @@
     <div class="price_line">
       <span class="price"><%= post.version %></span>
     </div>
-  </div>  
+  </div>
 <% end %>
-
 
 
